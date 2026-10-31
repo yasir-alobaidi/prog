@@ -31,12 +31,16 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    # Core Django database and authentication support
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.sessions', # Keep if using session-based auth, optional otherwise
+    
+    # Third-party API framework
+    'rest_framework',
+    
+    # Your custom backend app
+    'core',
 ]
 
 MIDDLEWARE = [
