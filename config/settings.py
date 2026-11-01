@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     
     # Your custom backend app
-    'core',
+    'products',
 ]
 
 MIDDLEWARE = [
